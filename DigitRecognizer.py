@@ -2,31 +2,6 @@
 
 import csv
 import pandas as pd, numpy as np
-'''
-train = []
-with open('train.csv', 'rb') as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-            train.append(row) 
-
-test = []
-with open('test.csv', 'rb') as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-        test.append(row) 
-
-train = pd.DataFrame(train)
-test = pd.DataFrame(test)
-
-train.columns = train.ix[0,:]
-test.columns = test.ix[0,:]
-train = train.ix[1:,:]
-test = test.ix[1:,:]
-
-train.save('train')
-test.save('test')
-'''
-
 # load data
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
